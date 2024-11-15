@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentStay - Find Your Perfect Student Hostel</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e0f7fa;
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('https://images.unsplash.com/photo-1555854877-bab0e564b8d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080') center/cover no-repeat;
+            color: white;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .search-form {
+            display: flex;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .search-form input,
+        .search-form select,
+        .search-form button {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-form button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-form button:hover {
+            background-color: #388e3c;
+        }
+
+        /* Features section */
+        .features {
+            padding: 4rem 2rem;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature img {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-top: 1rem;
+        }
+
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StudentStay</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Find Your Perfect Student Hostel</h1>
+            <p>Discover comfortable and affordable accommodations near your university</p>
+            <form class="search-form">
+                <input type="text" placeholder="Enter city or university">
+                <select>
+                    <option value="">Room type</option>
+                    <option value="single">Single</option>
+                    <option value="shared">Shared</option>
+                </select>
+                <input type="date" placeholder="Check-in date">
+                <button type="button">Search</button>
+            </form>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature">
+                <img src="rb_13027.png" alt="Wide Selection">
+                <h2>Wide Selection</h2>
+                <p>Choose from thousands of student hostels across the country.</p>
+            </div>
+            <div class="feature">
+                <img src="rb_25998.png" alt="Best Prices">
+                <h2>Best Prices</h2>
+                <p>Find accommodations that fit your budget with our price match guarantee.</p>
+            </div>
+            <div class="feature">
+                <img src="rb_829.png" alt="Verified Listings">
+                <h2>Verified Listings</h2>
+                <p>All our listings are verified to ensure quality and safety.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 StudentStay. All rights reserved.</p>
+        <p>Need help? <a href="#contact">Contact us</a></p>
+    </footer>
+</body>
+</html>
